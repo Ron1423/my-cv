@@ -10,12 +10,25 @@
 </head>
 <body>
     <header>
-        <table cellspacing="20">
+        <nav class="navbar-nav">
+            <ul class="navbar">
+                <li><a href="">Biography</a></li>
+                <li><a href="#educations">Educations</a></li>
+                <li><a href="#org_exp">Organization Experience</a></li>
+                <li><a href="#sosmed">Social Media</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact_me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="profile">
+        <table cellspacing="50">
             <tr>
-                <td>
+                <td id="img">
                     <img src="img/SAVE_20210824_203136-modified.png" alt="foto-diri" width="200">
                 </td>
-                <td>
+                <td class="about">
                     <h1>Aaron Yerusyadai Pelle</h1>
                     <h2>Student</h2>
                     <p>
@@ -28,17 +41,7 @@
                 </td>
             </tr>
         </table>
-    </header>
-    <nav>
-        <a href="">Biography</a>
-        <a href="#educations">| Educations</a>
-        <a href="#org_exp">| Organization Experience</a>
-        <a href="#sosmed">| Social Media</a>
-        <a href="#awards">| Awards</a>
-        <a href="#skills">| Skills</a>
-        <a href="#contact_me">| Contact Me</a>
-        <hr>
-    </nav>
+    </div>
     <section>
         <h1>Research Interest</h1>
         <p>
@@ -87,28 +90,12 @@
     </section>
     <section class="social_media" id="sosmed">
         <h1>Social Media</h1>
-        <table>
-            <tr>
-                <td>
-                    <ul>
-                        <li><a href="https://www.facebook.com/aaron.pelle.5/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <br>
-                        <li><a href="https://www.instagram.com/pelle_aaron/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <br>
-                        <li><a href="https://wa.me/6281212209269" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Facebook</li>
-                        <br><br><br>
-                        <li>Instagram</li>
-                        <br><br><br>
-                        <li>WhatsApp</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+            <ul>
+                <li><a href="https://www.facebook.com/aaron.pelle.5/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/aaron-yerusyadai-pelle-5435b8221" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/pelle_aaron/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://wa.me/6281212209269" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
         <hr>
     </section>
     <section id="awards">
@@ -145,24 +132,54 @@
         <hr>
     </section>
     <section id="contact_me">
-        <form action="">
-            <fieldset>
-                <legend><h1>Contact Me</h1></legend>
-                <p>
-                    <label for="name">Name :</label>
-                    <input type="text" name="name" required>
-                </p>
-                <p>
-                    <label for="email">Email :</label>
-                    <input type="text" name="email" required>
-                </p>
-                <label for="message">Message</label>
-                <br>
-                <textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message..."></textarea>
-                <br>
-                <input type="submit" name="submit">
-            </fieldset>
-        </form>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 50%;">
+                    <h3>Contact Description</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quam odit ut, accusamus nostrum modi iste illum delectus maiores laboriosam consequuntur debitis cumque corrupti laborum exercitationem corporis earum reprehenderit eaque!</p>
+                    <table id="sub-desc" style="width: 100%;">
+                        <tr>
+                            <td><i class="fa fa-mobile"></i><strong> Telephone</strong>
+                                <p>+62 812-1220-9269</p>
+                            </td>
+                            <td><i class="fa fa-envelope"></i><strong> Email</strong>
+                                <p><em>pelleaaron@gmail.com</em></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-home"></i><strong> Home Address</strong>
+                                <p>Depok City, West Java</p>
+                            </td>
+                            <td><i class="fa fa-briefcase"></i><strong> Office Address</strong>
+                                <p>---</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 50%;">
+                    <form action="">
+                        <legend><h1>Contact Me</h1></legend>
+                        <p>
+                            <label for="name">Name :</label>
+                            <input type="text" name="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email :</label>
+                            <input type="text" name="email" required>
+                        </p>
+                        <label for="message">Message :</label>
+                        <br>
+                        <textarea name="message" id="message" cols="90" rows="10" placeholder="Type your message..."></textarea>
+                        <br>
+                        <input type="submit" name="submit">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <hr>
     </section>
+    <footer>
+        <p><i class="fa fa-copyright"></i>2021 - <strong>MyCv</strong> - Aaron's Resume</p>
+    </footer>
 </body>
 </html>
